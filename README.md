@@ -138,9 +138,9 @@ dotnet run -c Release --no-build
 ### Key Benchmark Scenarios
 
 1. **Offset - First Page**: Retrieve page 1 (baseline)
-2. **Offset - Last Page**: Retrieve last page (~page 200)
+2. **Offset - Last Page**: Retrieve last page (~page 2000)
 3. **Offset - Next Page**: Retrieve page 2 (early pagination)
-4. **Offset - Previous Page**: Retrieve page 199 (deep pagination)
+4. **Offset - Previous Page**: Retrieve page 1995 (deep pagination)
 5. **Offset - Random Page**: Retrieve random page near end (stress test)
 
 6. **Cursor - First Page**: Retrieve first page (cursor = 0)
@@ -184,11 +184,11 @@ Server=tcp:your-server.database.windows.net,1433;Initial Catalog=PaginationDb;Pe
 
 ### Database Seeding
 
-The seed migration creates **10,000 test users**. To adjust the count:
+The seed migration creates **100,000 test users**. To adjust the count:
 
 1. Modify [Seed_Initial_Data.cs](pagination/Migrations/20260212063553_Seed_Initial_Data.cs):
    ```csharp
-   int totalUsers = 10000; // Change this value
+   int totalUsers = 100000; // Change this value
    ```
 
 2. Create a new migration:
