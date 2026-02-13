@@ -226,6 +226,10 @@ The seed migration creates **100,000 test users**. To adjust the count:
 
 ## 📈 Performance Insights
 
+### Results
+
+<img width="1514" height="438" alt="image" src="https://github.com/user-attachments/assets/ad500136-a372-4be3-9c65-fc8bf595ad7f" />
+
 Based on the benchmark design:
 
 - **Offset pagination degrades** as page number increases (deep pagination requires scanning more rows)
