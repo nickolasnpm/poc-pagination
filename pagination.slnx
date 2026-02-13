@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="BenchmarkSuite/BenchmarkSuite.csproj" Id="ed275174-7378-4dab-80f4-66b3c28b71e8" />
+  <Project Path="pagination/pagination.csproj" />
+</Solution>
